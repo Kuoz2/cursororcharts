@@ -1,0 +1,9 @@
+<section class="flex w-full flex-col border">
+    <h3 class="text-white font-bold text-lg">Sell for book</h3>
+<div class="flex flex-col" id="book_charts">
+    <%= Book.all.each do |book|%>
+        <%= render 'dashboard/charts/books/chart', book: book%>
+    <%end%>
+</div>
+    
+</section>
